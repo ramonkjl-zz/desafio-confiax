@@ -1,0 +1,30 @@
+.container {
+  min-height: 100vh;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0 0.5rem;
+}
+.container header h1{
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  
+  color: #5264AE;
+}
+.container main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.link_create_user{
+  cursor: pointer;
+}
+.link_create_user:hover{
+  text-decoration: underline #5264AE;
+  user-select: none;
+}

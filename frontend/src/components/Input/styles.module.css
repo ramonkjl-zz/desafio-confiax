@@ -1,0 +1,104 @@
+.group{
+  position: relative;
+}
+.group input{
+  width: 300px;
+  
+  display: block;
+  
+  padding: 10px 10px 10px 5px;
+  
+  border: none;
+  border-bottom: 1px solid #757575;
+  
+  font-size: 18px;
+}
+.group input:focus{
+  outline: none;
+  border-bottom: none;
+}
+.group label{
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.group input:focus ~ label{
+  top: -20px;
+  
+  font-size: 14px;
+  color: #5264AE;
+}
+.group input:valid ~ label{
+  top: -20px;
+  
+  font-size: 14px;
+  color: #5264AE;
+}
+.bar{
+  width: 300px;
+  
+  position: relative;
+  
+  display: block;
+}
+.bar::before, .bar::after{
+  width: 0;
+  height: 2px;
+  
+  position: absolute;
+  
+  content: '';
+  bottom: 1px;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar::before{
+  left: 50%;
+}
+.bar::after{
+  right: 50%;
+}
+.group input:focus ~ .bar::before, input:focus ~ .bar::after{
+  width: 50%;
+}
+.high_light{
+  width: 100px;
+  height: 60%;
+  
+  position: absolute;
+  top: 25%;
+  left: 0;
+  
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.group input:focus ~ .high_light{
+  border-bottom: none;
+  
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter{
+  from {background: #5264AE;}
+  to {width: 0; background: transparent;}
+}
+@-moz-keyframes inputHighlighter{
+  from {background: #5264AE;}
+  to {width: 0; background: transparent;}
+}
+@keyframes inputHighlighter{
+  from {background: #5264AE;}
+  to {width: 0; background: transparent;}
+}

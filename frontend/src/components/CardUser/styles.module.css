@@ -1,0 +1,38 @@
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  width: 170px;
+  height: 120px;
+  
+  padding: 30px;
+
+  background: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  
+  transition: all 0.3s ease-out;
+}
+.card h4{
+  margin: 0;
+  margin-bottom: 7px;
+}
+.card span{
+  color: teal;
+}
+.card:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.card p{
+  color: #a3a5ae;
+  font-size: 16px;
+}
+.image{
+  max-width: 64px;
+  max-height: 64px;
+  
+  float: right;
+}

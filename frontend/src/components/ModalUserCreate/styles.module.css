@@ -1,0 +1,32 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  z-index: 555;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+.container main{
+  width: 97%;
+  max-width: 380px;
+  height: 350px;
+
+  border-radius: 7px;
+  background: white;
+}
+.error{
+  margin-bottom: 1.1rem;
+  color: red;
+}
+.buttons{
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+}
